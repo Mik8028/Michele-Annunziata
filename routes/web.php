@@ -15,7 +15,10 @@ use App\Http\Controllers\PublicController;
 */
 
 Route::get('/', [PublicController::class , 'homepage']) ->name('homepage');
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 346c107377f2648f919de2a88cd69921d0fb40e4
