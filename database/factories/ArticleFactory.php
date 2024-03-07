@@ -22,7 +22,7 @@ class ArticleFactory extends Factory
         
         return [
             'title' => Str::title($product_name),
-            'subtitle' =>$this->faker->text(8),
+            'subtitle' => $this->faker->text(8),
             'body' => $this->faker->text(200),
             'image' => $image_name,
             'user_id' => $this->faker->numberBetween(1,1),

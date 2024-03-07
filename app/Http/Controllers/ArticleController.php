@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,6 +26,11 @@ class ArticleController extends Controller
     public function byCategory(Category $category) {
         $articles = $category->articles()->orderby('created_at' , 'desc')->get();
         return view('article.by-category' , compact('category', 'articles'));
+    }
+
+    public function byEditor(User $user) {
+        $articles = $user->articles()->orderby('created_at' , 'desc')->get();
+        return view('article.by-editor' , compact('user', 'articles'));
     }
 
     /**
