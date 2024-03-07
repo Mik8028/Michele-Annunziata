@@ -41,11 +41,11 @@ class ArticleController extends Controller
         ]);
 
         $article = Article::create([
-            'title'=>$request->title,
-            'subtitle'=>$request->subtitle,
-            'body'=>$request->body,
-            'image'=>$request->file('image')->store('public/images'),
-            'category_id'=>$request->category,
+            'title' => $request->title,
+            'subtitle' => $request->subtitle,
+            'body' => $request->body,
+            'image'=> $request->file('image')->store('public/images'),
+            'category_id'=> $request->category,
             'user_id'=> Auth::user()->id,
         ]);
 
