@@ -2,7 +2,7 @@
     <div class="container-fluid p-5 bg-info text-center text-white">
         <div class="row justify-content-center">
             <h1 class="display-1">
-               Tutti gli articoli 
+               Tutti gli Articoli 
             </h1>
         </div>
     </div>
@@ -20,7 +20,7 @@
                     user="{{ $article->user->name }}" 
                     url="{{ route('article.show' , compact('article')) }}" 
                     urlCategory=" {{ route('article.byCategory' , ['category' => $article->category->id]) }}"
-                    urlEditor=" {{ route('article.byEditor', ['user' => $article->category->id]) }}"
+                    urlEditor=" {{ route('article.byEditor', ['user' => $article->user->id]) }}"
                 />
             </div>
             @endforeach

@@ -7,8 +7,9 @@
       
     
     </div>
+     
     <div class="card-footer text-muted d-flex justify-content-center align-items-center">
-        Redatto il {{ $data }} da {{ $user }}
-        <a href="{{ $urlEditor }}" class="btn btn-info text-white">Leggi</a>
+        <a href="{{ $urlEditor }}">Redatto il {{ $data }} da {{ $user }}</a>
+        <a href="{{ $url }}" class="btn btn-info text-white">Leggi</a>
     </div>
 </div>
