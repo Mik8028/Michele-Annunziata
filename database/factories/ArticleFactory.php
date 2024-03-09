@@ -5,6 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
+
 /**
 * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Article>
 */
@@ -17,6 +18,8 @@ class ArticleFactory extends Factory
     */
     public function definition(): array
     {
+
+        
         $product_name = $this->faker->unique()->words($nb=2,$asText = true);
         $image_name ='public/images/'. $this->faker->numberBetween(1,4).'.jpg';
         

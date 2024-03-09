@@ -13,6 +13,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('article.index') }}">Tutti gli Articoli</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('careers') }}">Lavora con noi</a>
+                </li>
 
                 @auth
                 <li class="nav-item dropdown">
