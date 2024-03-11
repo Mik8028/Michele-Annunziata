@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class AdminController extends Controller
 {
@@ -11,6 +12,27 @@ class AdminController extends Controller
         $revisorRequests = User::where('is_revisor', NULL)->get();
         $writerRequests = User::where('is_writer', NULL)->get();
 
-        return view('admin.dashboard', compact('adminRequests', 'revisorRequests', 'writeRequests'));
+        return view('admin.dashboard', compact('adminRequests', 'revisorRequests', 'writerRequests'));
+    }
+
+    public function setAdmin(User $user){
+        $user->is_admin = true;
+        $user->save();
+
+        return redirect(route('admin.dashboard'))->with('message','Hai correttamente reso amministratore l\'utente scelto');
+    }
+
+    public function setRevisor(User $user){
+        $user->is_revisor = true;
+        $user->save();
+
+        return redirect(route('admin.dashboard'))->with('message','Hai correttamente reso revisore l\'utente scelto');
+    }
+
+    public function setWriter(User $user){
+        $user->is_writer = true;
+        $user->save();
+
+        return redirect(route('admin.dashboard'))->with('message','Hai correttamente reso redattore l\'utente scelto');
     }
 }

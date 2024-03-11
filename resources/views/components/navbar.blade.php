@@ -18,6 +18,11 @@
                 </li>
 
                 @auth
+                @if(Auth::user()->is_admin)
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
+                </li>
+                @endif
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
