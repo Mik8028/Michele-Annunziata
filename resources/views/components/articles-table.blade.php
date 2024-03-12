@@ -10,6 +10,23 @@
     </tr>
     </thead>
     <tbody>
-        @foreach ($articles as article)
+        @foreach ($articles as $article)
+            <tr>
+                <th scope="row"> {{$article->id}}</th>
+                <td>{{$article->title}}</td>
+                <td>{{$article->subtitle}}</td>
+                <td>{{$article->user->name}}</td>
+                <td>    
+                    @if (is_null($article->is_accepted))
+                        <a href="{{route('article.show',compact('article'))}}" class="btn btn-info text-white">Leggi l'articolo</a>
+                    @else
+                        <form action="{{route('revisor.undoArticle',compact('article'))}}" method="post">
+                            @csrf
+                            <button class="btn btn-info text-white">Riporta in revisione</button>
+                        </form>
+                    @endif
+                </td>
+            </tr>
+        @endforeach
     </tbody>
 </table>
