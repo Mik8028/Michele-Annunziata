@@ -71,7 +71,7 @@
 
 
 
-    <div class="container card p-5 shadow">
+    <div class="container card p-5 shadow cardHomepageBg">
         <div class="row">
             <div class="col-12">
                 <div class="container my-5">
@@ -92,7 +92,7 @@
                 </div>
                 @endif
 
-                <form class="card p-5 shadow" action="{{ route('login') }}" method="POST">
+                <form class="card card_homepage p-5" action="{{ route('login') }}" method="POST">
                     @csrf
 
                     <div class="mb-3">
