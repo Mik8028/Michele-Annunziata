@@ -3,9 +3,16 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
+
 .nav-link{
     color:white!important;
 }
+
+.blackText{
+    color:black!important;
+}
+
 
 .carousel-item{
     height:500px;

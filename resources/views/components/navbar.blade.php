@@ -20,7 +20,7 @@
                 @auth
                 @if(Auth::user()->is_admin)
                 <li class="nav-item">
-                    <a class="nav-link " href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
+                    <a class="nav-link" href="{{ route('admin.dashboard') }}">Dashboard Admin</a>
                 </li>
                 @endif
                 @if(Auth::user()->is_revisor)
@@ -29,7 +29,7 @@
                 </li>
                 @endif
                 <li class="nav-item dropdown ">
-                    <a  class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                    <a  class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Benvenuto  {{ Auth::user()->name }} 
                     </a>
@@ -37,7 +37,7 @@
                         <li class="nav-item ">
                             <form action="{{ route('logout') }}" id="logout-form" method="POST">
                                 @csrf
-                                <button type="submit" class="btn nav-link ">Logout</button>
+                                <button type="submit" class="btn nav-link blackText">Logout</button>
                             </form>
                         </li>
                     </ul>
@@ -51,8 +51,8 @@
                         Benvenuto Ospite
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('register') }}">Registrati</a></li>
-                        <li><a class="dropdown-item" href="{{ route('login') }}">Accedi</a></li>
+                        <li><a class="dropdown-item " href="{{ route('register') }}">Registrati</a></li>
+                        <li><a class="dropdown-item " href="{{ route('login') }}">Accedi</a></li>
                     </ul>
                 </li>
                 @endguest
