@@ -30,6 +30,7 @@
     border-radius: 8px;
 }
 
+<<<<<<< HEAD
 .cardHomepageBg{
     background-image: url(https://picsum.photos/2000/300);
 }
@@ -37,3 +38,20 @@
 .card_homepage {
     border:none!important;
 }
+=======
+.btn-read{
+    background-color: #212529;
+    border: 0;
+}
+
+.display-index{
+    background-color: white!important;
+}
+
+.h1-index{
+margin-top: 4%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+>>>>>>> d72f87399a7312e48712720b37170cbe2571c3e4
