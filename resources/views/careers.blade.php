@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5 bg-secondary">
         <div class="row justify-content-center align-content-center border rounded p-2 shadow">
             <div class="col-12 col-md-6">
                 <h2>Lavora come amministratore</h2>
