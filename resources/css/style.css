@@ -30,3 +30,18 @@
     border-radius: 8px;
 }
 
+.btn-read{
+    background-color: #212529;
+    border: 0;
+}
+
+.display-index{
+    background-color: white!important;
+}
+
+.h1-index{
+margin-top: 4%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+

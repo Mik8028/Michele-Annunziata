@@ -1,7 +1,7 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid p-5 bg-info text-center text-white display-index">
         <div class="row justify-content-center">
-            <h1 class="display-1">
+            <h1 class="display-1 h1-index">
                Tutti gli Articoli 
             </h1>
         </div>
