@@ -50,6 +50,7 @@ background-color: #f8f9fa;
     border:none!important;
     background-color: rgba(255, 255, 255, 0);
 }
+
 .btn-read{
     background-color: #212529;
     border: 0;
@@ -369,4 +370,13 @@ a, a:hover {
 		background-image: linear-gradient(80deg, rgba(0, 118, 189, 0.1), transparent 50%);
 	}
 
+}
+
+.sizeText{
+    font-size: 6rem!important;
+    position: relative;
+    
+    color: #ffffff;
+    /* font-family: 'Gill Sans'!important; */
+    text-shadow: -1px 0 #212529, 0 4px #212529, 3px 0 #212529, 0 -1px #212529;
 }

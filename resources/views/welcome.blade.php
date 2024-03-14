@@ -2,31 +2,43 @@
 
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+  <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+    
+    
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://picsum.photos/1000/800" class="d-block w-100" alt="...">
+        <img src="storage\images\5.jpg" class="d-block w-100" alt="...">
+        
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+
+          <div class="d-flex flex-row">
+            <div class="p-5 ">
+              <h1 class="sizeText fw-bold">The Aulab Post</h1>
+            </div>
+          </div>
+          
+          <h5 class="text-black fw-bold">Explore, Inspire & Share</h5>
+          <p class="text-black fw-bold"></p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="https://picsum.photos/1000/801" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+          <h5 class="text-black fw-bold">Condividi il tuo articolo!</h5>
+          <p class="text-black fw-bold">Entra nella nostra comunity</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="https://picsum.photos/1000/802" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <h5 class="text-black fw-bold">Revisiona gli articoli!</h5>
+          <p class="text-black fw-bold">Collabora con noi</p>
         </div>
       </div>
     </div>
