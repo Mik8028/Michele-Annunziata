@@ -1,14 +1,14 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid  text-center display-index">
         <div class="row justify-content-center">
-            <h1 class=" display-1 ">
+            <h2 class="display-1 h1-index">
                 Lavora con noi
-            </h1>
+            </h2>
         </div>
     </div>
 
     <div class="container my-5 bg-secondary">
-        <div class="row justify-content-center align-content-center border rounded p-2 shadow">
+        <div class="row justify-content-center text-white background-form align-content-center border rounded p-2 shadow">
             <div class="col-12 col-md-6">
                 <h2>Lavora come amministratore</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla veritatis saepe alias asperiores a at repudiandae eius illum, dolorem sapiente quas laborum. Excepturi architecto at obcaecati necessitatibus! In, aperiam nam.</p>
@@ -48,7 +48,7 @@
                         <textarea name="message" id="message" cols="30" rows="7" class="form-control">{{ old('message') }}</textarea>
                     </div>
                     <div class="mt-2">
-                        <button class="btn btn-info text-white"> Invia la tua canditatura </button>
+                        <button class="btn btn-login text-white"> Invia la tua canditatura </button>
                     </div>
                 </form>
             </div>

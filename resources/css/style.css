@@ -380,3 +380,15 @@ a, a:hover {
     /* font-family: 'Gill Sans'!important; */
     text-shadow: -1px 0 #212529, 0 4px #212529, 3px 0 #212529, 0 -1px #212529;
 }
+
+.btn-login{
+  background: rgba(255, 200, 0, 0.8);
+}
+
+.color-form{
+  background:rgb(36, 41, 46)
+}
+
+.background-form{
+  background: rgba(36, 41, 46, 0.2)
+}

@@ -1,9 +1,9 @@
 <x-layout>
-<div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid  text-center display-index">
         <div class="row justify-content-center">
-            <h1 class="display-1">
-                Bentornato , amministratore
-            </h1>
+            <h2 class="display-1 h1-index">
+                Bentornato Amministratore!
+            </h2>
         </div>
     </div>
 
@@ -13,7 +13,7 @@
         </div>
     @endif
     <div class="container my-5">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <div class="col-12">
                 <h2>Richieste per ruolo amministratore</h2>
                 <x-requests-table :roleRequests="$adminRequests" role="amministratore"/>

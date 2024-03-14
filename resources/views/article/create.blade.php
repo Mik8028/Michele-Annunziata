@@ -1,12 +1,13 @@
 <x-layout>
 
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid  text-center display-index">
         <div class="row justify-content-center">
-            <h1 class="display-1">
-                Inserisci un Articolo
-            </h1>
+            <h2 class="display-1 h1-index">
+                Inserisci un articolo
+            </h2>
         </div>
     </div>
+
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
@@ -20,28 +21,28 @@
                 </div>
 
                 @endif
-                <form action="{{route('article.store')}}" method="post" class="card p-5 shadow" enctype="multipart/form-data">
+                <form action="{{route('article.store')}}" method="post" class="card p-5 color-form text-white shadow" enctype="multipart/form-data">
                     @csrf
 
                     <div class="mb-3">
                         <label for="title" class="form-label">Titolo:</label>
-                        <input type="text" name="title" class="form-control" id="title" value="{{old('title')}}">
+                        <input type="text" name="title" class="form-control rounded-5" id="title" value="{{old('title')}}">
                     </div>
 
                     <div class="mb-3">
                         <label for="subtitle" class="form-label">Sottotitolo:</label>
-                        <input type="text" name="subtitle" class="form-control" id="subtitle"
+                        <input type="text" name="subtitle" class="form-control rounded-5" id="subtitle"
                             value="{{old('subtitle')}}">
                     </div>
 
                     <div class="mb-3">
                         <label for="image" class="form-label">Immagine:</label>
-                        <input type="file" name="image" class="form-control" id="image">
+                        <input type="file" name="image" class="form-control rounded-5" id="image">
                     </div>
 
                     <div class="mb-3">
                         <label for="category" class="form-label">Categoria:</label>
-                        <select name="category" id="category" class="form-control text-capitalize">
+                        <select name="category" id="category" class="form-control rounded-5 text-capitalize">
                             @foreach ($categories as $category)
                             <option value="{{ $category->id}}">{{$category->name}}</option>
                             @endforeach
@@ -49,19 +50,20 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="body" class="form-label">Corpo del testo:</label>
-                        <textarea name="body" id="body" cols="30" rows="7" class="form-control">
+                        <label for="body" class="form-label ">Corpo del testo:</label>
+                        <textarea name="body" id="body" cols="30" rows="7" class="form-control rounded-4">
                         {{old('body')}}
                     </textarea>
                     </div>
 
                     <div class="mt-2 d-flex justify-content-center">
-                        <button class="btn btn-info text-white">Inserisci un articolo</button>
+                        <button class="btn btn-login text-white">Inserisci un articolo</button>
                     </div>
                 </form>
 
             </div>
         </div>
     </div>
+    
 
 </x-layout>

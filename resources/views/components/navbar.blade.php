@@ -5,8 +5,9 @@
     
     
     
-    
-   
+        <a href="{{ route('homepage') }}">
+            <img src="/storage/images/logo2.jpg" alt="Bootstrap" width="40" height="40">
+        </a>
         <a class="navbar-brand text-white" href="{{ route('homepage') }}">AulabPost</a>
        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
