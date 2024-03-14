@@ -91,7 +91,8 @@
             <div class="row">
 
               <div class="col-12 col-md-6">
-                <h1>ciaoo</h1>
+                <img src="/storage/images/logo2.jpg" alt="Bootstrap" width="400" height="400">
+                <h1>Start from here !</h1>
               </div>
               <div class="col-12 col-md-6">
                 @if ($errors->any())
@@ -140,7 +141,7 @@
   <div class="space">
     <footer class="text-center  text-lg-start text-white mt-1" style="background-color: #1c2331">
       <!-- Section: Social media -->
-      <section class="d-flex justify-content-center p-4" style="background-color: #6351ce">
+      <section class="d-flex justify-content-center p-2" style="background-color: #ffc800cc">
         <!-- Left -->
         <div class="me-5">
           <span>Get connected with us on social networks:</span>
