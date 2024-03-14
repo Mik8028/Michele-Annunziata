@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid  bg-info text-center display-index">
+    <div class="container-fluid text-center display-index">
         <div class="row justify-content-center">
             <h1 class="display-3 h1-index">
                 {{$article->title}}

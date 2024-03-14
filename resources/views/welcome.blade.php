@@ -92,7 +92,7 @@
 
               <div class="col-12 col-md-6">
                 <img src="/storage/images/logo2.jpg" alt="Bootstrap" width="400" height="400">
-                <h1>Start from here !</h1>
+                <h1>.......</h1>
               </div>
               <div class="col-12 col-md-6">
                 @if ($errors->any())
@@ -118,7 +118,7 @@
                   </div>
 
                   <div class="mb-3">
-                    <button class="btn bg-info text-white">Accedi</button>
+                    <button class="btn btn-login">Accedi</button>
                     <p class="small mt-2">Non sei registrato? <a href="{{ route('register') }}">Clicca qui</a> </p>
                   </div>
                 </form>
@@ -143,8 +143,13 @@
       <!-- Section: Social media -->
       <section class="d-flex justify-content-center p-2" style="background-color: #ffc800cc">
         <!-- Left -->
-        <div class="me-5">
+        <div class="me-5 ">
           <span>Get connected with us on social networks:</span>
+          
+          <i class="bi bi-facebook me-1 ms-1"></i>
+          <i class="bi bi-instagram me-1"></i>
+          <i class="bi bi-twitter me-1"></i>
+          <i class="bi bi-skype me-1"></i>
         </div>
         <!-- Left -->
 
@@ -181,12 +186,10 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold">Company name</h6>
+              <h6 class="text-uppercase fw-bold">Azienda</h6>
               <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+              The Aulab Post offre articoli di qualità su una vasta gamma di argomenti, dalla tecnologia alla cultura. Esplora il nostro sito per contenuti informativi e coinvolgenti.
               </p>
             </div>
             <!-- Grid column -->
@@ -194,7 +197,7 @@
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Products</h6>
+              <h6 class="text-uppercase fw-bold">Prodotti</h6>
               <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
               <p>
                 <a href="#!" class="text-white">MDBootstrap</a>
@@ -214,7 +217,7 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <h6 class="text-uppercase fw-bold">Link utili</h6>
               <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
               <p>
                 <a href="#!" class="text-white">Your Account</a>
@@ -234,12 +237,12 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
-              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <h6 class="text-uppercase fw-bold">Contatti</h6>
               <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-              <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-              <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-              <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              <p><i class="bi bi-geo-alt me-1"></i> Roma, RM 00118, ITA</p>
+              <p><i class="bi bi-envelope-at me-1"></i> coders.aulab@live.it</p>
+              <p><i class="bi bi-telephone me-1"></i> + 06 234 567 88</p>
+              <p><i class="bi bi-telephone me-1"></i> + 06 234 567 89</p>
             </div>
             <!-- Grid column -->
           </div>
@@ -250,8 +253,8 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        Â© 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        Â© 2024 Copyright:
+        <a class="text-white">TheCoders.com</a>
       </div>
       <!-- Copyright -->
     </footer>

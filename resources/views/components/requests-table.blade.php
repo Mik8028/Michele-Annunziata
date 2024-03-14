@@ -1,5 +1,5 @@
-<table class="table table-striped table-hover border">
-    <thead class="table-dark">
+<table class="table table-striped table-hover  border">
+    <thead class="background-form">
         <tr>
             <th scope="col">#</th>
             <th scope="col">Nome</th>
@@ -20,7 +20,7 @@
                             <form action="{{ route('admin.setAdmin', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-info text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-login text-white">Attiva {{ $role }}</button>
                             </form>
                         @break
 
@@ -28,7 +28,7 @@
                             <form action="{{ route('admin.setRevisor', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-info text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-login text-white">Attiva {{ $role }}</button>
                             </form>
                         @break
 
@@ -36,7 +36,7 @@
                             <form action="{{ route('admin.setWriter', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-info text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-login text-white">Attiva {{ $role }}</button>
                             </form>
                         @break
                     

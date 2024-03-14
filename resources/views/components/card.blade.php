@@ -10,7 +10,7 @@
      
     <div class="card-footer text-muted d-flex justify-content-center align-items-center">
         <a href="{{ $urlEditor }}">Redatto il {{ $data }} da {{ $user }}</a>
-        <a href="{{ $url }}" class="btn btn-info btn-read text-white">Leggi</a>
+        <a href="{{ $url }}" class="btn btn-login text-white">Leggi</a>
     </div>
 </div>
 <!-- <div class="card mb-3" style="width: 800px;">

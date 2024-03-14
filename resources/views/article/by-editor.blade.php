@@ -1,11 +1,12 @@
 <x-layout>
-    <div class="container-fluid p-5 bg-info text-center text-white">
+    <div class="container-fluid  text-center display-index">
         <div class="row justify-content-center">
-            <h1 class="display-1">
-                Redattore : {{ $user->name }}
-            </h1>
+            <h2 class="display-1 h1-index">
+            Redattore : {{ $user->name }}
+            </h2>
         </div>
     </div>
+    
     @if (session('message'))
     <div class="alert alert-success text-center">
         {{session('message')}}
