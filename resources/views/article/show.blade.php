@@ -25,7 +25,7 @@
                 <p>{{$article->body }}</p>
 
                 <div class="text-center">
-                    <a href="{{route ('article.index') }}" class="btn btn-info btn-read text-white my-5">
+                    <a href="{{route ('article.index') }}" class="btn btn-login btn-warning text-white my-5">
                         Torna indietro
                     </a>
                 </div>
