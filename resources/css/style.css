@@ -397,3 +397,9 @@ a, a:hover {
 .background-form{
   background: rgba(36, 41, 46, 0.2)
 }
+
+.textShadow{
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
+  font-size: 40px;
+  color: #ffffff!important;
+}

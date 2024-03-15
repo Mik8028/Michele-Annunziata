@@ -39,7 +39,7 @@
                         <input type="password" name="password_confirmation" class="form-control rounded-5" id="password_confirmation">
                     </div>
                     <div class="mb-3">
-                        <button class="btn btn-login text-white">Registrati</button>
+                        <button class="btn btn-login btn-warning text-white">Registrati</button>
                         <p class="small mt-2">Gia registrato? <a href="{{ route('login') }}">Clicca qui</a> </p>
                     </div>
                 </form>

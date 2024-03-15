@@ -23,22 +23,22 @@
             </div>
           </div>
           
-          <h5 class="text-black fw-bold">Explore, Inspire & Share</h5>
+          <h5 class="text-black fw-bold textShadow">Explore, Inspire & Share</h5>
           <p class="text-black fw-bold"></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://picsum.photos/1000/801" class="d-block w-100" alt="...">
+        <img src="storage\images\car2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-black fw-bold">Condividi il tuo articolo!</h5>
-          <p class="text-black fw-bold">Entra nella nostra comunity</p>
+          <h5 class="text-black fw-bold textShadow">Condividi il tuo articolo!</h5>
+          <p class="text-black fw-bold textShadow">Entra nella nostra community</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://picsum.photos/1000/802" class="d-block w-100" alt="...">
+        <img src="storage\images\car3.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="text-black fw-bold">Revisiona gli articoli!</h5>
-          <p class="text-black fw-bold">Collabora con noi</p>
+          <h5 class="text-black fw-bold textShadow">Revisiona gli articoli!</h5>
+          <p class="text-black fw-bold textShadow">Collabora con noi</p>
         </div>
       </div>
     </div>
@@ -91,8 +91,8 @@
             <div class="row">
 
               <div class="col-12 col-md-6">
-                <img src="/storage/images/logo2.jpg" alt="Bootstrap" width="400" height="400">
-                <h1>.......</h1>
+                
+                <h1 class="text-align-left">Entra nella nostra community!</h1>
               </div>
               <div class="col-12 col-md-6">
                 @if ($errors->any())

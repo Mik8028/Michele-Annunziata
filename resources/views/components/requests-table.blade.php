@@ -20,7 +20,7 @@
                             <form action="{{ route('admin.setAdmin', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-login text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-warning btn-login text-white">Attiva {{ $role }}</button>
                             </form>
                         @break
 
@@ -28,7 +28,7 @@
                             <form action="{{ route('admin.setRevisor', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-login text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-warning btn-login text-white">Attiva {{ $role }}</button>
                             </form>
                         @break
 
@@ -36,7 +36,7 @@
                             <form action="{{ route('admin.setWriter', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-login text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-warning  btn-login text-white">Attiva {{ $role }}</button>
                             </form>
                         @break
                     
