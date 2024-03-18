@@ -39,6 +39,11 @@
                         <label for="image" class="form-label">Immagine:</label>
                         <input type="file" name="image" class="form-control rounded-5" id="image">
                     </div>
+                    <div class="mb-3">
+                        <label for="tags" class="form-label">Tags</label>
+                        <input  name="tags" class="form-control rounded-5" id="tags" value="{{ old('tags') }}">
+                        <span class="small fst-italic">Dividi ogni tag con una virgola</span>
+                    </div>
 
                     <div class="mb-3">
                         <label for="category" class="form-label">Categoria:</label>

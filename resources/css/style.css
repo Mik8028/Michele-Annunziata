@@ -21,6 +21,21 @@ background-color: #f8f9fa;
     color:white!important;
 }
 
+/*bottone navbar cerca*/
+
+.btn-outline-info{
+  color: rgba(255, 200, 0, 0.8);
+  border-color: rgba(255, 200, 0, 0.8);
+  
+}
+
+.btn-outline-info:hover{
+  background-color: rgba(255, 200, 0, 0.8);
+  color: white;
+  border-color: rgba(255, 200, 0, 0.8);
+}
+
+
 .blackText{
     color:black!important;
 }
