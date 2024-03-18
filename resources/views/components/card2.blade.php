@@ -52,6 +52,13 @@
         </div>
         <div class="postcard__bar"></div>
         <h6 class="postcard__title blu"><a href="{{ $urlEditor }}" class="sizeCategory">Categoria: {{ $category }}</a></h6>
+        @if ($tags)
+            <p class="small fst-italic text-capitalize">
+                @foreach($tags as $tag)
+                    #{{ $tag->name }}
+                @endforeach
+            </p>
+        @endif
 
         <h6 class="postcard__title blu"><a href="{{ $urlEditor }}" <strong class="ss">Redatto il {{ $data }} da:</strong><strong class="adm">  {{ $user }}</strong></a></h6>
         <ul class="postcard__tagbox">
