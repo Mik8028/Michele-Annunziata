@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Scout\ScoutServiceProvider;
+use TeamTNT\Scout\TNTSearchScoutServiceProvider;
 
 
 return [
@@ -161,8 +163,8 @@ return [
          * Package Service Providers...
          */
         App\Providers\FortifyServiceProvider::class,
-        TeamTNT\Scout\TNTSearchScoutServiceProvider::class,
-        Laravel\Scout\ScoutServiceProvider::class,        
+        TNTSearchScoutServiceProvider::class,
+        ScoutServiceProvider::class,        
         /*
          * Application Service Providers...
          */

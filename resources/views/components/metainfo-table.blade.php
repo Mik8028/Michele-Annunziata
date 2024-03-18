@@ -15,7 +15,7 @@
 <tr>
 <th scope="row">{{$metaInfo->id }}</th>
 <td>{{$metaInfo->name}}</td>
-<td>{{$count($metaInfo->articles )}}</td>
+<td>{{ count($metaInfo->articles )}}</td>
 @if ($metaType == 'tags')
     <td>
     <form action="" method ="">
@@ -30,7 +30,7 @@
     <form action="" method ="">
     @csfr
     @method('delete')
-    <button type="submit" class="btn btn-danger text-white">Aggiorna</button>
+    <button type="submit" class="btn btn-danger text-white">Elimina</button>
     </form>
     </td>
     @else

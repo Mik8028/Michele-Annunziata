@@ -10,10 +10,10 @@
 
         @foreach($articles as $article)
         <div>
-
+        
             <x-card2 
                 :tags="$article->tags"
-                title="{{ $article->title }}" 
+                title="{{ Str::limit($article->title, 2) }}" 
                 subtitle="{{ $article->subtitle }}" 
                 image="{{ $article->image }}" 
                 category="{{ $article->category->name }}" 
