@@ -2,7 +2,7 @@
     <div class="container-fluid text-center display-index">
         <div class="row justify-content-center">
             <h1 class="display-3 h1-index">
-                {{$article->title}}
+            {{$article->title}}
             </h1>
         </div>
     </div>
