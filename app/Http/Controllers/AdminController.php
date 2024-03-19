@@ -67,4 +67,20 @@ class AdminController extends Controller
 
         return redirect(route('admin.dashboard'))->with('message','Hai correttamente aggiornato la categoria');
     }
+
+
+    public function deleteCategory(Category $category){
+        $category->delete();
+        return redirect(route('admin.dashboard'))->with('message','Hai correttamente eliminato la categoria');
+    }
+
+
+    public function storeCategory(Request $request) {
+        Category::create([
+            'name' => strtolower($request->name),
+        ]);
+
+        return redirect(route('admin.dashboard')) ->with('message' , 'Hai correttamente inserito una nuova categoria');
+    }
+
 }
