@@ -18,7 +18,7 @@
 <td>{{ count($metaInfo->articles )}}</td>
 @if ($metaType == 'tags')
     <td>
-    <form action="" method ="">
+    <form action="{{route('admin.editTag',['tag'=> $metaInfo])}}" method ="POST">
     @csfr
     @method('put')
     <input type="text" name="name" placeholder="Nuovo nome tag" class="form-control w-50 d-inline">
@@ -27,7 +27,7 @@
     </td>
 
     <td>
-    <form action="" method ="">
+    <form action="{{route('admin.deleteTag',['tag'=> $metaInfo])}}" method ="POST">
     @csfr
     @method('delete')
     <button type="submit" class="btn btn-danger text-white">Elimina</button>
@@ -35,7 +35,7 @@
     </td>
     @else
     <td>
-    <form action="" method ="">
+    <form action="{{route('admin.editCategory',['category'=>$metaInfo])}}" method ="POST">
     @csfr
     @method('put')
     <input type="text" name="name" placeholder="Nuovo nome categoria" class="form-control w-50 d-inline">
