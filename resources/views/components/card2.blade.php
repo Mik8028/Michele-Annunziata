@@ -51,7 +51,21 @@
           </time>
         </div>
         <div class="postcard__bar"></div>
-        <h6 class="postcard__title blu"><a href="{{ $urlEditor }}" class="sizeCategory">Categoria: {{ $category }}</a></h6>
+        
+        
+        
+        @if ($category)
+          <h6 class="postcard__title blu"><a href="{{ $urlCategory }}" class="sizeCategory">Categoria: {{ $category }}</a></h6>
+          
+          @else
+
+              <p >
+                Non categorizzato
+              </p>
+
+          @endif
+        
+
         @if ($tags)
             <p class="small fst-italic text-capitalize">
                 @foreach($tags as $tag)
@@ -65,7 +79,7 @@
           <!-- <li class="tag__item"><i class="fas fa-tag mr-2"></i>{{ $category }}</li> -->
 
           <li class="tag__item play blu">
-            <a href="{{ $urlEditor }}" class="redatt">Leggi</a>
+            <a href="{{ $url }}" class="redatt">Leggi</a>
           </li>
         </ul>
       </div>
