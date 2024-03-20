@@ -33,4 +33,6 @@
             @endforeach
         </div>
     </div>
+
+    <x-footer />
 </x-layout>
