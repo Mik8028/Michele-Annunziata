@@ -1,11 +1,11 @@
 <table class="table table-striped table-hover border></table">
     <thead class="">
     <tr>
-        <th scope="col" >#</th>
-        <th scope="col" >Titolo</th>
-        <th scope="col" >Sottotitolo</th>
-        <th scope="col" >Redattore</th>
-        <th scope="col" >Azioni</th>
+        <th class="th-hashtag-r" scope="col" >#</th>
+        <th class="th-title-r" scope="col" >Titolo</th>
+        <th class="th-subtitle-r" scope="col" >Sottotitolo</th>
+        <th class="th-redactor-r" scope="col" >Redattore</th>
+        <th class="th-azione-r" scope="col" >Azioni</th>
 
     </tr>
     </thead>
@@ -16,13 +16,13 @@
                 <td>{{$article->title}}</td>
                 <td>{{$article->subtitle}}</td>
                 <td>{{$article->user->name}}</td>
-                <td>    
+                <td class="text-center">    
                     @if (is_null($article->is_accepted))
                         <a href="{{route('article.show',compact('article'))}}" class="btn btn-warning btn-login text-white">Leggi l'articolo</a>
                     @else
-                        <form action="{{route('revisor.undoArticle',compact('article'))}}" method="post">
+                        <form class="text-center" action="{{route('revisor.undoArticle',compact('article'))}}" method="post">
                             @csrf
-                            <button class="btn btn-login btn-warning text-white">Riporta in revisione</button>
+                            <button class="btn btn-login btn-warning text-white ">Riporta in revisione</button>
                         </form>
                     @endif
                 </td>

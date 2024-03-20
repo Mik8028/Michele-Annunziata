@@ -24,17 +24,13 @@
 
                 <p>{{$article->body }}</p>
 
-                <div class="text-center">
-                    <a href="{{route ('article.index') }}" class="btn btn-login btn-warning text-white my-5">
-                        Torna indietro
-                    </a>
-                </div>
+                
 
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-center ">
                     @if (Auth::user()&&Auth::user()->is_revisor)
                     <form action="{{route('revisor.acceptArticle',compact('article'))}}" method="post">
                         @csrf
-                        <button class="btn btn-success text-white">Accetta articolo</button>
+                        <button class="btn btn-success text-white me-5  ">Accetta articolo</button>
                     </form>
                     <form action="{{route('revisor.rejectArticle',compact('article'))}}" method="post">
                         @csrf
@@ -42,6 +38,13 @@
                     </form>
                     @endif
                 </div>
+
+                <div class="text-center m-4">
+                    <a href="{{route ('article.index') }}" class="btn btn-login btn-warning text-white my-5 ">
+                        Torna indietro
+                    </a>
+                </div>
+                
             </div>
         </div>
     </div>

@@ -418,3 +418,53 @@ a, a:hover {
   font-size: 40px;
   color: #ffffff!important;
 }
+
+
+
+.th-hashtag{
+  width: 20%!important;
+}
+
+.th-name{
+  width: 30%!important;
+}
+
+.th-email{
+  width: 30%!important;
+}
+
+.th-azione{
+  width: 20%!important;
+  text-align: center!important;
+}
+
+.th-hashtag-r{
+  width: 10%!important;
+}
+
+.th-title-r{
+  width: 30%!important;
+}
+
+.th-subtitle-r{
+  width: 20%!important;
+}
+
+.th-redactor-r{
+  width: 15%!important;
+}
+
+.th-azione-r{
+  width: 25%;
+  text-align: center;
+}
+
+.btn-success{
+  background-color: rgb(53, 153, 53)!important;
+  border-color: rgb(53, 153, 53)!important;
+  
+}
+
+.btn-success:hover{
+  background-color: rgba(53, 153, 53, 0.8)!important;
+}
