@@ -44,7 +44,7 @@
         <a href="{{ $urlEditor }}"><img class="postcard__img" src="{{ Storage::url($image) }}" alt="Image Title" /></a>
       </a>
       <div class="postcard__text">
-        <h1 class="postcard__title blu ">{{ $title }}</h1>
+        <h1 class="postcard__title blu ">{{$title}} </h1>
         <div class="postcard__subtitle small">
           <time datetime="2020-05-25 12:00:00">
             <i class="fas fa-calendar-alt mr-2"></i>{{ $subtitle }}
