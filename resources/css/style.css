@@ -42,7 +42,7 @@ background-color: #f8f9fa;
 
 
 .carousel-item{
-    height:100vh;
+    height:700px;
 
 }
 
@@ -467,4 +467,9 @@ a, a:hover {
 
 .btn-success:hover{
   background-color: rgba(53, 153, 53, 0.8)!important;
+}
+
+.card-h{
+height:100%;
+
 }
