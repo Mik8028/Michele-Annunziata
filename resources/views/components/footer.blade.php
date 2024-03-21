@@ -6,10 +6,11 @@
         <div class="me-5 ">
           <span>Get connected with us on social networks:</span>
           
-          <i class="bi bi-facebook me-1 ms-1"></i>
-          <i class="bi bi-instagram me-1"></i>
-          <i class="bi bi-twitter me-1"></i>
-          <i class="bi bi-skype me-1"></i>
+          <a href=""><i class="bi bi-facebook me-1 ms-1"></i></a>
+          <a href=""><i class="bi bi-instagram me-1"></i></a>
+          <a href=""><i class="bi bi-twitter me-1"></i></a>
+          <a href=""><i class="bi bi-skype me-1"></i></a>
+          <a href=""><i class="bi bi-whatsapp me-1"></i></a>
         </div>
         <!-- Left -->
 
