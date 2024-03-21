@@ -3,19 +3,19 @@
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
 
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+      </div>
     
     
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="storage\images\5.jpg" class="d-block w-100" alt="...">
         
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block ">
 
           <div class="d-flex flex-row">
             <div class="p-5 ">
@@ -50,6 +50,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+    </div>
   </div>
   <!-- <div class="container-fluid p-5 bg-info text-center text-white">
                     <div class="row justify-content-center">
@@ -67,7 +68,7 @@
   <div class="container my-5">
     <div class="row justify-content-center">
       @foreach($articles as $article)
-      <div class="col-12 col-md-3">
+      <div class="col-12 col-md-3 pb-5">
 
         <x-card 
           :tags="$article->tags"

@@ -2,7 +2,7 @@
     <div class="container-fluid">     
    
     
-        <a href="{{ route('homepage') }}">
+        <a href="{{ route('homepage') }}" class="pe-2">
             <img src="/storage/images/logo2.jpg" alt="Bootstrap" width="40" height="40">
         </a>
         <a class="navbar-brand text-white" href="{{ route('homepage') }}">AulabPost</a>

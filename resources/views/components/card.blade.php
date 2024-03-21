@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card card-h">
     <img src="{{ Storage::url($image) }}" alt="" class="card-img-top">
     <div class="card-body h-50 ">
         <h5 class="card-title">{{ $title }}</h5>
