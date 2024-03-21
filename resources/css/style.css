@@ -42,8 +42,8 @@ background-color: #f8f9fa;
 
 
 .carousel-item{
-    height:700px;
-
+    height:auto;
+    max-height: 700px;
 }
 
 .navbar-toggler-icon {
