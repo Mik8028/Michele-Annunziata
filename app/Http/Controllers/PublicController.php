@@ -43,7 +43,7 @@ class PublicController extends Controller
     $user = Auth::user();
     $role = $request->role;
     $email = $request->email;
-    $message = $request->message;
+    $message = $request->message; 
 
     Mail::to('coders.aulab@live.it')->send(new CareerRequestMail(compact('role', 'email', 'message')));
 
@@ -64,4 +64,5 @@ class PublicController extends Controller
     $user->update();
     return redirect(route('homepage'))->with('message', 'Grazie per averci contattato!');
   }
+  
 }

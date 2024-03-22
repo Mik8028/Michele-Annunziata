@@ -1,9 +1,10 @@
 <?php
 
 use App\Models\Article;
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 
 return new class extends Migration
@@ -26,7 +27,7 @@ return new class extends Migration
             $table->timestamps();
         });
       
-
+       
 
         
         $articles = Article::create([
@@ -44,6 +45,7 @@ return new class extends Migration
             'category_id' => '1',
                      
             ]);
+           
 
             $articles = Article::create([
 
@@ -109,15 +111,7 @@ return new class extends Migration
                         'user_id' => '3',
                         
                         'category_id' => '5',
-                        
-                    
-                                 
-                        ]);
-
-                      
-                        
-
-
+                     ]);
 
     }
 

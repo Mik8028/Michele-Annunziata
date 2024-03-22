@@ -175,7 +175,7 @@ a {text-decoration: none;}
 
 
 <tr>
-<td align="center" class="esd-block-image es-p10t p-3" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="{{ asset('storage/images/00004.jpeg') }}" alt style="display: block;" width="560"></a></td>
+<td align="center" class="esd-block-image es-p10t p-3" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="{{ asset('storage/images/em01.jpg') }}" alt style="display: block;" width="560"></a></td>
 </tr>
 </tbody>
 </table>
