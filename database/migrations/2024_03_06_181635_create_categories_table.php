@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        $categories = ['Sport', 'Auto', 'Film e musica', 'Economia', 'Cucina'];
+        $categories = ['Salute e Benessere', 'Arte e Cultura', 'Viaggi e Avventura', 'Cucina e Gastronomia', 'Ambiente e Sostenibilità'];
         foreach($categories as $category){
             Category::create([
                 'name' => $category,

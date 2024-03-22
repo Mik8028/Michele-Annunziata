@@ -13,7 +13,7 @@
     
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="storage\images\5.jpg" class="d-block w-100" alt="...">
+        <img src="storage\images\car01.jpg" class="d-block w-100" alt="...">
         
         <div class="carousel-caption d-none d-md-block ">
 
@@ -28,14 +28,14 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="storage\images\car2.jpg" class="d-block w-100" alt="...">
+        <img src="storage\images\car02.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="text-black fw-bold textShadow">Condividi il tuo articolo!</h5>
           <p class="text-black fw-bold textShadow">Entra nella nostra community</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="storage\images\car3.png" class="d-block w-100" alt="...">
+        <img src="storage\images\car03.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5 class="text-black fw-bold textShadow">Revisiona gli articoli!</h5>
           <p class="text-black fw-bold textShadow">Collabora con noi</p>

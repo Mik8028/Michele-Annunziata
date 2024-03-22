@@ -65,7 +65,7 @@
                     @csrf
                     <input type="text" name="name" class="form-control me-2"   placeholder="Inserisci una nuova categoria">
 
-                    <button type="submit"  class="btn btn-sucess text-white">Aggiungi</button>
+                    <button type="submit"  class="btn btn-warning text-white">Aggiungi</button>
                 </form>
             </div>
         </div>

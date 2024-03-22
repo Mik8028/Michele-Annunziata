@@ -24,6 +24,22 @@ return new class extends Migration
             'email' => 'coders.aulab@live.it',
             'password' => bcrypt('12345678'),
             'is_admin' => true,
+         
+        ]);
+
+        $user = User::create([
+
+            'name' => 'Revisore',
+            'email' => 'revisorecoders.aulab@live.it',
+            'password' => bcrypt('12345678'),
+            'is_revisor' => true,
+        ]);
+        $user = User::create([
+
+            'name' => 'Redattore',
+            'email' => 'redattorecoders.aulab@live.it',
+            'password' => bcrypt('12345678'),
+            'is_writer' => true,
 
         ]);
     }
