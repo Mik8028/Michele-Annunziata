@@ -6,6 +6,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\provaindex;
 use App\Http\Controllers\RevisorController;
+use App\Http\Controllers\WriterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,8 +61,13 @@ Route::middleware('revisor')->group(function(){
 Route::middleware('writer')->group(function(){
     Route::get('/articles/create',[ArticleController::class,'create'])->name('article.create');
     Route::post('/article/store',[ArticleController::class, 'store'])->name('article.store');
+<<<<<<< HEAD
 });
 
 
 
 
+=======
+    Route::delete('get/writer/dashboard',[WriterController::class,'dashboard' ])->name('writer.dashboard');
+});
+>>>>>>> beccbf15f6dd7f86a7b6f82956ba377bfc3f619e
