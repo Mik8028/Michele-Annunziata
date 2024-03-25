@@ -36,56 +36,56 @@
 
 <section class="dark">
 
-  <div class="container1  py-2">
+    <div class="container1  py-2">
 
 
-    <article class="postcard dark blu">
-      <a class="postcard__img_link" href="#">
-        <a href="{{ $urlEditor }}"><img class="postcard__img" src="{{ Storage::url($image) }}" alt="Image Title" /></a>
-      </a>
-      <div class="postcard__text">
-        <h1 class="postcard__title blu ">{{$title}} </h1>
-        <div class="postcard__subtitle small">
-          <time datetime="2020-05-25 12:00:00">
-            <i class="fas fa-calendar-alt mr-2"></i>{{ $subtitle }}
-          </time>
-        </div>
-        <div class="postcard__bar"></div>
-        
-        
-        
-        @if ($category)
-          <h6 class="postcard__title blu"><a href="{{ $urlCategory }}" class="sizeCategory">Categoria: {{ $category }}</a></h6>
-          
-          @else
-
-              <p >
-                Non categorizzato
-              </p>
-
-          @endif
-        
-
-        @if ($tags)
-            <p class="small fst-italic text-capitalize">
-                @foreach($tags as $tag)
-                    #{{ $tag->name }}
-                @endforeach
-            </p>
-        @endif
-
-        <h6 class="postcard__title blu"><a href="{{ $urlEditor }}" <strong class="ss">Redatto il {{ $data }} da:</strong><strong class="adm">  {{ $user }}</strong></a></h6>
-        <ul class="postcard__tagbox">
-          <!-- <li class="tag__item"><i class="fas fa-tag mr-2"></i>{{ $category }}</li> -->
-
-          <li class="tag__item play blu">
-            <a href="{{ $url }}" class="redatt">Leggi</a>
-          </li>
-        </ul>
-      </div>
-    </article>
+        <article class="postcard dark blu">
+            <a class="postcard__img_link" href="#">
+                <a href="{{ $urlEditor }}"><img class="postcard__img" src="{{ Storage::url($image) }}"
+                        alt="Image Title" /></a>
+            </a>
+            <div class="postcard__text">
+                <h1 class="postcard__title blu ">{{ $title }} </h1>
+                <div class="postcard__subtitle small">
+                    <time datetime="2020-05-25 12:00:00">
+                        <i class="fas fa-calendar-alt mr-2"></i>{{ $subtitle }}
+                    </time>
+                </div>
+                <div class="postcard__bar"></div>
 
 
 
-  </div>
+                @if ($category)
+                    <h6 class="postcard__title blu"><a href="{{ $urlCategory }}" class="sizeCategory">Categoria:
+                            {{ $category }}</a></h6>
+                @else
+                    <p>
+                        Non categorizzato
+                    </p>
+                @endif
+
+
+                @if ($tags)
+                    <p class="small fst-italic text-capitalize">
+                        @foreach ($tags as $tag)
+                            #{{ $tag->name }}
+                        @endforeach
+                    </p>
+                @endif
+
+                <h6 class="postcard__title blu"><a href="{{ $urlEditor }}" <strong class="ss">Redatto il
+                        {{ $data }} da:</strong><strong class="adm"> {{ $user }}</strong></a></h6>
+                <ul class="postcard__tagbox">
+                    <!-- <li class="tag__item"><i class="fas fa-tag mr-2"></i>{{ $category }}</li> -->
+
+                    <li class="tag__item play blu">
+                        <a href="{{ $url }}" class="redatt">Leggi</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+
+
+    </div>
 </section>

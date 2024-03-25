@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\provaindex;
 use App\Http\Controllers\RevisorController;
 /*
 |--------------------------------------------------------------------------
@@ -60,3 +61,7 @@ Route::middleware('writer')->group(function(){
     Route::get('/articles/create',[ArticleController::class,'create'])->name('article.create');
     Route::post('/article/store',[ArticleController::class, 'store'])->name('article.store');
 });
+
+
+
+
