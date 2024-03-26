@@ -128,6 +128,7 @@ class ArticleController extends Controller
             'body' => $request->body,
             'category_id'=> $request->category,
             'slug' => Str::slug($request->title),
+            'is_accepted'=> NULL,
         ]);
 
         if ($request->image) {
@@ -166,7 +167,8 @@ class ArticleController extends Controller
         foreach ($article->tags as $tag){
             $article->tags()->detach($tag);
         }
-
+    
+        Storage::delete($article->image);
         $article->delete();
         return redirect(route('writer.dashboard'))->with('message','Hai correttamente cancellato l\'articolo scelto');
     }
