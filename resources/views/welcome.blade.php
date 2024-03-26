@@ -88,12 +88,13 @@
         <div class="box2">
 
             <img src="storage/images/car01.jpg" alt="">
-
+            <h2 class="testo-carousel">The Aulab Post</h2>
+           
 
         </div>
-        <div>
-            <h2>The Aulab Post</h2>
-        </div>
+
+        
+
     </div>
 
     {{-- fine nuovo carousel --}}
