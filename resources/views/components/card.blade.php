@@ -56,7 +56,7 @@
                            </p>
              
                        @endif
-                       <span class="text-muted small fst-italic">tempo di lettura {{ $article->readDuration() }} min</span>
+                       <span class="text-muted small fst-italic">tempo di lettura {{ $readDuration }} min</span>
              
                        @if ($tags)
                          <p>

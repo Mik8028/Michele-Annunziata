@@ -22,7 +22,7 @@
             :url="route('article.show' , compact('article'))" 
             :urlCategory=" $article->category ? route('article.byCategory', ['category' => $article->category->id]) : null " 
             :urlEditor="route('article.byEditor', ['user' => $article->user->id])" 
-            :readDuration = "$article->readDuration()"
+            :readDuration="$article->readDuration()"
             />
         </div>
         @endforeach
