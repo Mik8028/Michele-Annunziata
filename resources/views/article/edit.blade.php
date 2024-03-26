@@ -62,7 +62,7 @@
                     </div>
 
                     <div class="mt-2 d-flex justify-content-center">
-                        <button class="btn btn-login text-white">Inserisci un articolo</button>
+                        <button class="btn btn-warning btn-login text-white">Modifica articolo</button>
                     </div>
                 </form>
 
