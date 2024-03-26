@@ -21,8 +21,10 @@
                 </div>
 
                 <hr>
-
-                <p>{{$article->body }}</p>
+                <div class="text-break">
+                    <p>{{ $article->body }}</p>
+                </div>
+                
 
                 
 
