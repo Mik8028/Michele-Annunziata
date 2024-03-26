@@ -93,7 +93,9 @@
 
 
         </div>
-
+        <div>
+            <h2>The Aulab Post</h2>
+        </div>
     </div> 
 
     {{-- fine nuovo carousel --}}
