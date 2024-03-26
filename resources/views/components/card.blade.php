@@ -1,7 +1,4 @@
-
-{{-- inizio Card precedente --}}
-
-{{-- <div class="card card-h">
+<div class="card card-h">
     <img src="{{ Storage::url($image) }}" alt="" class="card-img-top">
     <div class="card-body h-50 ">
         <h5 class="card-title">{{ $title }}</h5>
@@ -31,12 +28,16 @@
         <a href="{{ $urlEditor }}">Redatto il {{ $data }} da {{ $user }}</a>
         <a href="{{ $url }}" class="btn btn-warning btn-login text-white">Leggi</a>
     </div>
-</div> --}}
-
-{{-- fine Card precedente --}}
+</div>
 
 
- <div class="bodyCard">
+
+
+
+{{-- inizio Card precedente --}}
+
+
+ {{-- <div class="bodyCard">
 
     <div class="containerCard">
         <div class="cardAnimate">
@@ -75,4 +76,6 @@
         </div>
     </div>
 
-</div> 
+</div>  --}}
+
+{{-- Fine card precedente --}}

@@ -8,19 +8,19 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($roleRequests as $user)
-        <tr>
-            <th scope="row">{{ $user->id }}</th>
-            <td>{{ $user->name }}</td>
-            <td>{{ $user->email }}</td>
-            <td class="th-azione">
-                @switch($role)
-
+        @foreach ($roleRequests as $user)
+            <tr>
+                <th scope="row">{{ $user->id }}</th>
+                <td>{{ $user->name }}</td>
+                <td>{{ $user->email }}</td>
+                <td class="th-azione">
+                    @switch($role)
                         @case('amministratore')
                             <form action="{{ route('admin.setAdmin', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-warning btn-login text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-warning btn-login text-white">Attiva
+                                    {{ $role }}</button>
                             </form>
                         @break
 
@@ -28,7 +28,8 @@
                             <form action="{{ route('admin.setRevisor', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-warning btn-login text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-warning btn-login text-white">Attiva
+                                    {{ $role }}</button>
                             </form>
                         @break
 
@@ -36,14 +37,14 @@
                             <form action="{{ route('admin.setWriter', compact('user')) }}" method="POST">
                                 @csrf
                                 @method('patch')
-                                <button type="submit" class="btn btn-warning  btn-login text-white">Attiva {{ $role }}</button>
+                                <button type="submit" class="btn btn-warning  btn-login text-white">Attiva
+                                    {{ $role }}</button>
                             </form>
                         @break
-                    
-                @endswitch
+                    @endswitch
 
-            </td>
-        </tr>
+                </td>
+            </tr>
         @endforeach
     </tbody>
 </table>
