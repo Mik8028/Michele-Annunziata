@@ -80,7 +80,7 @@
 
             <img src="storage/images/car01.jpg" alt="">
             <h2 class="testo-carousel">The Aulab Post</h2>
-           <form class="d-flex box1-cerca" method="GET" action="{{ route('article.search') }}">
+            <form class="box1-cerca" method="GET" action="{{ route('article.search') }}">
                 <input class="form-control form-control1 w-50 " type="search" placeholder="Trova articolo"
                     aria-label="Search" name="query">
                 <button class="btn btn-warning-search" type="submit">Cerca</button>
@@ -231,7 +231,7 @@
                         <img class=" fluid-image" src="storage/images/img-form11.png" alt="">
                     </div>
 
-                    <h2>Entra nella nostra community!</h2>
+                    <h2 class="querySize">Entra nella nostra community!</h2>
 
                     <div class="imputBox">
 
