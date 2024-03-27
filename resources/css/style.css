@@ -826,15 +826,12 @@ a:hover {
     z-index: 1;
 }
 
-.mycarousel .box1 {
-    position: absolute;
-    width: 30% auto;
-    height: 10vh;
-    
-    /* margin-top: 220px; */
-    margin: 220px 0px 0px 200px;
-
-    z-index: 2;
+.box1-cerca {
+    justify-content: center;
+    position: relative;
+    width: 85%;
+    margin: -15% auto;
+    z-index: 1; 
 }
 
 .mycarousel .box2 img {
@@ -855,7 +852,7 @@ a:hover {
     left: 0;
     z-index: 1;
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 

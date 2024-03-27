@@ -63,6 +63,16 @@ class ArticleController extends Controller
             'image'=>'image|required',
             'category'=>'required',
             'tags'=>'required',
+        ], [
+            'title.required'=>'Il titolo è obbligatorio',
+            'title.min'=>'Il titolo è troppo corto',
+            'subtitle.required'=>'Il sottotitolo è obbligatorio',
+            'subtitle.min'=>'Il sottotitolo è troppo corto',
+            'body.required'=>'Il corpo dell\'articolo è obbligatorio',
+            'body.min'=>'Il corpo dell\'articolo è troppo corto',
+            'image.required'=>'L\'immagine è obbligatoria',
+            'category.required'=>'La categoria è obbligatoria',
+            'tags.required'=>'Il tag è obbligatorio'
         ]);
         
 

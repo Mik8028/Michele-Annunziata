@@ -76,20 +76,15 @@
 
     <div class="mycarousel">
 
-
-        <div class="box1">
-            <form class="d-flex" method="GET" action="{{ route('article.search') }}">
-                <input class="form-control form-control1" type="search" placeholder="Cosa stai cercando?"
-                    aria-label="Search" name="query">
-                <button class="btn btn-warning-search" type="submit">Cerca</button>
-            </form>
-        </div>
-
         <div class="box2">
 
             <img src="storage/images/car01.jpg" alt="">
             <h2 class="testo-carousel">The Aulab Post</h2>
-           
+           <form class="d-flex box1-cerca" method="GET" action="{{ route('article.search') }}">
+                <input class="form-control form-control1 w-50 " type="search" placeholder="Trova articolo"
+                    aria-label="Search" name="query">
+                <button class="btn btn-warning-search" type="submit">Cerca</button>
+            </form>
 
         </div>
 
