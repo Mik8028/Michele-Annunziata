@@ -27,22 +27,25 @@
                     <div class="mb-3">
                         <label for="title" class="form-label">Titolo:</label>
                         <input type="text" name="title" class="form-control rounded-5" id="title" value="{{old('title')}}">
+                        <span class="small fst-italic">*minimo 5 caratteri</span>
                     </div>
 
                     <div class="mb-3">
                         <label for="subtitle" class="form-label">Sottotitolo:</label>
                         <input type="text" name="subtitle" class="form-control rounded-5" id="subtitle"
                             value="{{old('subtitle')}}">
+                            <span class="small fst-italic">*minimo 5 caratteri</span>
                     </div>
 
                     <div class="mb-3">
                         <label for="image" class="form-label">Immagine:</label>
                         <input type="file" name="image" class="form-control rounded-5" id="image">
+                        <span class="small fst-italic">*inserimento obbligatorio</span>
                     </div>
                     <div class="mb-3">
                         <label for="tags" class="form-label">Tags</label>
                         <input  name="tags" class="form-control rounded-5" id="tags" value="{{ old('tags') }}">
-                        <span class="small fst-italic">Dividi ogni tag con una virgola</span>
+                        <span class="small fst-italic">*dividi ogni tag con una virgola</span>
                     </div>
 
                     <div class="mb-3">
@@ -56,9 +59,11 @@
 
                     <div class="mb-3">
                         <label for="body" class="form-label ">Corpo del testo:</label>
+                        
                         <textarea name="body" id="body" cols="30" rows="7" class="form-control rounded-4">
                         {{old('body')}}
-                    </textarea>
+                        </textarea>
+                        <span class="small fst-italic">*minimo 10 caratteri</span>
                     </div>
 
                     <div class="mt-2 d-flex justify-content-center">
