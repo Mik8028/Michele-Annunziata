@@ -133,6 +133,15 @@
     
     {{-- fine card articoli --}}
 
+    {{--pulsante inserisci articolo--}}
+  
+    <div class="mb-5 mt-0 ">
+        <p class="text-center " >
+            <a href="{{ route('article.create') }}" class="px-5 py-2 btn btn-warning btn-login text-white">Inserisci un Articolo</a>
+        </p>
+    </div>
+    {{-- fine pulsante inserisci articolo--}}
+
 
 
 
@@ -218,7 +227,7 @@
                 @endif
 
 
-
+              
 
                 <form action="{{ route('login') }}" method="POST">
                     @csrf
