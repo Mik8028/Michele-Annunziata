@@ -9,7 +9,7 @@
                         alt="Image Title" /></a>
             </a>
             <div class="postcard__text">
-                <h1 class="postcard__title blu ">{{ $title }} </h1> {{-- tolta la classe: postcard__title . Perchè non altrimenti scompare il titolo quando riduco lo schermo--}}
+                <h1 class="postcard__title blu ">{{ $title }} </h1> {{-- tolta la classe: postcard__title . Perchè altrimenti scompare il titolo quando riduco lo schermo--}}
                 <div class="postcard__subtitle small">
                     <time datetime="2020-05-25 12:00:00">
                         <i class="fas fa-calendar-alt mr-2"></i>{{ $subtitle }}
