@@ -66,7 +66,7 @@
 
     @if (session('message'))
         <div class="alert alert-success text-center">
-            {{ session('message') }}
+            {{ session('message') }} 
         </div>
     @endif
 

@@ -171,7 +171,20 @@ a {text-decoration: none;}
 <table cellpadding="0" cellspacing="0" width="100%">
 <tbody>
 
-<h2 class=" align-content-center pt-3 ">Richiesta di ruolo</h2>
+<tr>
+                                                                        <td width="560" class="esd-container-frame" align="center" valign="top">
+                                                                            <table cellpadding="0" cellspacing="0" width="100%">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td align="center">
+                                                                                            <h2 class="align-content-center pt-3">Richiesta di ruolo:</h2>
+                                                                                            <p style="text-align: center; font-size: 18px;"><h2>{{ $info['role'] }}</h2></p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
 
 
 <tr>

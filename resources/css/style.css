@@ -905,3 +905,15 @@ a:hover {
     }
 }
 
+.alert-success{
+    margin-top: 70px;
+    
+}
+
+.category-color{
+    color: rgb(255, 200, 0)!important;
+}
+
+.size-readTime{
+    font-size: 11px!important;
+}

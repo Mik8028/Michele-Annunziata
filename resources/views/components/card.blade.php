@@ -1,18 +1,18 @@
 <div class="card card-h">
     <img src="{{ Storage::url($image) }}" alt="" class="card-img-top">
-    <div class="card-body h-50 ">
+    <div class="card-body text-center h-50 ">
         <h5 class="card-title">{{ $title }}</h5>
         <p class="card-text">{{ $subtitle }}</p>
         @if ($category)
             <a href="{{ $urlCategory }}"
-                class="small text-muted d-flex justify-content-center align-items-center">{{ $category }}</a>
+                class="category-color small text-muted d-flex justify-content-center align-items-center">{{ $category }}</a>
         @else
-            <p class="small text-muted fst-italic text-capitalize">
+            <p class="category-color small text-muted fst-italic text-capitalize">
                 Non categorizzato
             </p>
         @endif
-        <span class="text-muted small fst-italic">tempo di lettura {{ $readDuration }} min</span>
-
+    
+        <h5></h5>
         @if ($tags)
             <p class="small fst-italic text-capitalize ">
                 @foreach ($tags as $tag)
@@ -20,6 +20,8 @@
                 @endforeach
             </p>
         @endif
+        <h5></h5>
+        <span class="size-readTime text-muted small fst-italic">tempo di lettura {{ $readDuration }} min</span>
 
 
     </div>
