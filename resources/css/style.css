@@ -192,6 +192,7 @@ a:hover {
         width: 100%;
         object-fit: cover;
         position: relative;
+       
     }
 
     .postcard__img_link {
@@ -308,6 +309,7 @@ a:hover {
 
         .postcard__text {
             padding: 3rem;
+            padding-left: 4rem;
             width: 100%;
         }
 
