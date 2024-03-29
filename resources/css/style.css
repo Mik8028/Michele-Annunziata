@@ -469,6 +469,46 @@ a:hover {
     text-align: center;
 }
 
+/* ----modifiche 29-03---- */
+
+.thAshtagWrithr {
+    width: 5% !important;
+}
+
+.thtitleWriter {
+    width: 15% !important;
+}
+
+.thSubTitleWriter {
+    width: 15% !important;
+}
+
+.thCategoryWriter {
+    width: 10% !important;
+    
+}
+.thTagsWriter {
+    width: 15% !important;
+   
+}
+
+.thCreatedWriter {
+    width: 10% !important;
+   
+}
+
+.thAzioniWriter {
+    width: 16% !important;
+    text-align: center !important;
+    margin-right: 10px;
+}
+
+.sizeTesto{
+    font-size: 12px;
+}
+
+
+
 .btn-success {
     background-color: rgb(53, 153, 53) !important;
     border-color: rgb(53, 153, 53) !important;
