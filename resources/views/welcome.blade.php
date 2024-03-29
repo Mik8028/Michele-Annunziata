@@ -95,13 +95,20 @@
     {{-- fine nuovo carousel --}}
 
 
-
+    {{--pulsante inserisci articolo--}}
+  
+    <div class="mt-5">
+        <p class="text-center " >
+            <a href="{{ route('article.create') }}" class="px-5 py-2 btn btn-warning btn-login text-white">Inserisci un Articolo</a>
+        </p>
+    </div>
+    {{-- fine pulsante inserisci articolo--}}
 
 
     {{-- Inizio Card Articoli --}}
 
     <div class="bodyCard">
-        <div class="container my-5">
+        <div class="container my-3">
             <div class="row justify-content-center">
 
                 @foreach ($articles as $article)
@@ -128,14 +135,7 @@
     
     {{-- fine card articoli --}}
 
-    {{--pulsante inserisci articolo--}}
-  
-    <div class="mb-5 mt-0 ">
-        <p class="text-center " >
-            <a href="{{ route('article.create') }}" class="px-5 py-2 btn btn-warning btn-login text-white">Inserisci un Articolo</a>
-        </p>
-    </div>
-    {{-- fine pulsante inserisci articolo--}}
+    
 
 
 
