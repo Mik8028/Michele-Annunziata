@@ -228,7 +228,8 @@
                     @csrf
 
                     <div class="contimg">
-                        <img class=" fluid-image" src="storage/images/img-form11.png" alt="">
+                        <img class="fluid-image" src="{{ asset('storage/images/img-form11.png') }}" alt="">
+
                     </div>
 
                     <h2 class="querySize">Entra nella nostra community!</h2>
